@@ -1,0 +1,91 @@
+
+<h2> Livros cadastrados recentemente</h2>
+
+<table class=table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Type</th>
+      <th>Publication</th>
+      <th>Publisher</th>
+      <th>Autor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book._type %></td>
+        <td><%= book.publisher.name %></td>
+        <td><%= book.autor.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2> Autores cadastrados recentemente </h2>
+
+<table class=table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @autors.each do |autor| %>
+      <tr>
+        <td><%= autor.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2> Editoras cadastradas recentemente </h2>
+
+<table class=table>
+  <thead>
+    <tr>
+      <th>Publisher</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @publishers.each do |publisher| %>
+      <tr>
+        <td><%= publisher.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<h2> Cadastros - Gráfico - 21 dias </h2>
+
+<table class=table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Type</th>
+      <th>Publication</th>
+      <th>Publisher</th>
+      <th>Autor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book._type %></td>
+        <td><%= book.publisher.name %></td>
+        <td><%= book.autor.name %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
